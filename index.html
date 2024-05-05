@@ -47,8 +47,10 @@ You then look to the dial and start turning. As you do, the centerpiece passes b
 
 [[You take note of what each voice tells you...]]</tw-passagedata><tw-passagedata pid="8" name="You punch Beau, like really hard this time." tags="" position="925,300" size="100,100">DM NOTE: IF YOU&#39;VE REACHED THIS SCREEN. YOU MUST LET THE DM KNOW BEFORE YOU PROCEED. IF YOU DON&#39;T, THE DM WILL KNOW! TRUST ME, I CODED THIS TO KNOW.
 
-[[Click this only once you&#39;ve told the DM.]]</tw-passagedata><tw-passagedata pid="9" name="Click this only once you&#39;ve told the DM." tags="" position="1050,300" size="100,100">Beau does not react yet again. Unsure of what&#39;s happening to Beau, you reckon you must turn your attention away from him for the moment and back to the ring.
 
+
+[[Click this only once you&#39;ve told the DM.]]</tw-passagedata><tw-passagedata pid="9" name="Click this only once you&#39;ve told the DM." tags="" position="1050,300" size="100,100">Beau does not react yet again. Unsure of what&#39;s happening to Beau, you reckon you must turn your attention away from him for the moment and back to the ring.
+(set: $Quake to TRUE)
 [[You examine the ring further]]</tw-passagedata><tw-passagedata pid="10" name="You take note of what each voice tells you..." tags="" position="550,500" size="100,100">
 
 Skull 1: “Before you I lie, upon your finger – when I speak, I raise my wrist. I ask politely rather than insist.”
@@ -90,7 +92,7 @@ A beggar. A king. A sage. What order of skulls match the beggar, king, and sage?
 
 
 
-</tw-passagedata><tw-passagedata pid="18" name="You jump into the puddle, sensing that the portal of black liquid closes in behind you and seeps back into your ring" tags="" position="1100,575" size="100,100">NOTE: SCREENSHOT THIS PAGE
+</tw-passagedata><tw-passagedata pid="18" name="You jump into the puddle, sensing that the portal of black liquid closes in behind you and seeps back into your ring" tags="" position="1100,575" size="100,100">NOTE: SCREENSHOT THIS PAGE AND SHOW OR SEND TO YOUR DM.
 
 You are about to return to Beau&#39;s dream to aid your party in combat. Unlocking the ring&#39;s power to create you a portal, you&#39;ve become empowered for this encounter.
 
@@ -106,7 +108,9 @@ As a bonus action, you may hand the ring to someone else to wear in case they wi
 (if: $CurseCount is 4)[Lastly, the curse inflicted on you takes effect. You are silenced for 24 seconds (4 turns).]
 (if: $CurseCount is 5)[Lastly, the curse inflicted on you takes effect. You are silenced for 30 seconds (5 turns).]
 (if: $CurseCount is 6)[Lastly, the curse inflicted on you takes effect. You are silenced for 36 seconds (6 turns).]
-(if: $CurseCount is 7)[Lastly, the curse inflicted on you takes effect. You are silenced for 42 seconds (7 turns).]</tw-passagedata><tw-passagedata pid="19" name="Your fingers snap the dial in the correct combination." tags="" position="850,775" size="100,100">The ring makes a definitive click. No voice this time, but black liquid starts leaking onto the floor before you. It makes no stain, but the danger you sensed at first is more obvious. Your friends are locked in combat. 
+(if: $CurseCount is 7)[Lastly, the curse inflicted on you takes effect. You are silenced for 42 seconds (7 turns).]
+
+(if: $Quake is TRUE)[Oh. Also, don&#39;t forget you punched Beau. Like really hard.]</tw-passagedata><tw-passagedata pid="19" name="Your fingers snap the dial in the correct combination." tags="" position="850,775" size="100,100">The ring makes a definitive click. No voice this time, but black liquid starts leaking onto the floor before you. It makes no stain, but the danger you sensed at first is more obvious. Your friends are locked in combat. 
 
 [[You jump into the puddle, sensing that the portal of black liquid closes in behind you and seeps back into your ring]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
