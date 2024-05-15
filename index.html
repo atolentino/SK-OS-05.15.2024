@@ -9,51 +9,67 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play MindPalacePuzzle.</tw-noscript></noscript></tw-story>
-<tw-storydata name="MindPalacePuzzle" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="672E5907-46A0-42B5-9A4F-A48314C9C52D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar { display: none; } </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Meta Question" tags="" position="425,225" size="100,100">META: Before we start, a note and a question from DM: at the end of each round in the current combat encounter, I’ll check in with you if you want to perform any action outside of running through this puzzle. To continue, please confirm: is Fin with you?
+<tw-storydata name="MindPalacePuzzle" startnode="9" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="672E5907-46A0-42B5-9A4F-A48314C9C52D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar { display: none; }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="1, 2, 3" tags="" position="525,650" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="2" name="1, 3, 2" tags="" position="650,650" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="3" name="2, 1, 3" tags="" position="400,650" size="100,100">The ring makes a definitive click. No voice this time, but black liquid starts leaking onto the floor before you. It makes no stain, but the danger you sensed at first is more obvious. Your friends are locked in combat. 
 
-* [[Yes, Fin is with me in the room]]
-* [[No, Fin is not with me in the room]]</tw-passagedata><tw-passagedata pid="2" name="Yes, Fin is with me in the room" tags="" position="550,300" size="100,100">(set: $Fin to TRUE)
-
-Noted! Also feel free to let me know if you have any questions. Do NOT under any circumstances refresh this page. Or your character might perma-die. Jkjk, but seriously.
-
-[[Click here to continue]]
-</tw-passagedata><tw-passagedata pid="3" name="No, Fin is not with me in the room" tags="" position="550,175" size="100,100">(set: $Fin to FALSE)
-
-Noted! Also feel free to let me know if you have any questions. Do NOT under any circumstances refresh this page. Or your character might perma-die. Jkjk, but seriously.
-
-[[Click here to continue]]
-</tw-passagedata><tw-passagedata pid="4" name="Click here to continue" tags="" position="675,225" size="100,100">You feel as if you have no choice but to notice the head of the ring has expanded into a dial. Like those constructed to unlock safes. The muscles in your neck and behind your eyes maintain their autonomy, but your curiosity compels you. The kind of curiosity that senses danger even though everything you sense in your immediate vicinity is safe.
+[[You jump into the puddle]]</tw-passagedata><tw-passagedata pid="4" name="2, 3, 1" tags="" position="525,775" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="5" name="3, 1, 2" tags="" position="650,775" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="6" name="3, 2, 1" tags="" position="400,775" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="7" name="Click here to continue" tags="" position="650,225" size="100,100">You feel as if you have no choice but to notice the head of the ring has expanded into a dial. Like those constructed to unlock safes. The muscles in your neck and behind your eyes maintain their autonomy, but your curiosity compels you. The kind of curiosity that senses danger even though everything you sense in your immediate vicinity is safe.
 
 No, the danger you sense is in the ring. Not a danger to you, but to your friends. Only Beau is around. He is fast asleep in deep sleep. Where are they? Weren’t you all in deep magical sleep?
 
 (if: $Fin is true)[You turn to Fin and ask if he&#39;s there. You are met with silence]
 
-Fin has lied to you all.
+Fin is not telling you the whole truth of your situation.
 
 
 * [[You try to shake Beau awake]]
 * [[You punch Beau]]
-* [[You examine the ring further]]</tw-passagedata><tw-passagedata pid="5" name="You try to shake Beau awake" tags="" position="800,350" size="100,100">Despite Beau breathing deeply in his sleep. You are met with resistance. His muscles are tensed as if he were paralyzed. Beau, however, does not stir.
+* [[You examine the ring further]]</tw-passagedata><tw-passagedata pid="8" name="Click this only once you&#39;ve told the DM." tags="" position="1025,300" size="100,100">Beau does not react yet again. Unsure of what&#39;s happening to Beau, you reckon you must turn your attention away from him for the moment and back to the ring.
+(set: $Quake to TRUE)
+[[You examine the ring further]]</tw-passagedata><tw-passagedata pid="9" name="Meta Question" tags="" position="400,250" size="100,100">META: Before we start, a note and a question from DM: at the end of each round in the current combat encounter, I’ll check in with you if you want to perform any action outside of running through this puzzle. To continue, please confirm: is Fin with you?
 
-* [[You punch Beau, like really hard this time.]]
-* You turn your attention away from Beau for the moment. [[You examine the ring further]].
-</tw-passagedata><tw-passagedata pid="6" name="You punch Beau" tags="" position="800,225" size="100,100">Despite Beau breathing deeply in his sleep. Your punch is met with resistance. His muscles are tensed as if he were awake and prepared to take a hit. Beau, however, does not stir.
+* [[Yes, Fin is with me in the room]]
+* [[No, Fin is not with me in the room]]</tw-passagedata><tw-passagedata pid="10" name="No, Fin is not with me in the room" tags="" position="525,175" size="100,100">(set: $Fin to FALSE)
 
-* Again. [[You punch Beau, like really hard this time.]]
-* You turn your attention away from Beau for the moment. [[You examine the ring further]].
-</tw-passagedata><tw-passagedata pid="7" name="You examine the ring further" tags="" position="1200,200" size="100,100">On the ring’s shoulder, you notice three symbols in a line: a bowl, a crown, and a book.
+Noted! Also feel free to let me know if you have any questions. Do NOT under any circumstances refresh this page. Or your character might perma-die. Jkjk, but seriously.
+
+[[Click here to continue]]</tw-passagedata><tw-passagedata pid="11" name="Nothing happens with the ring. You wonder to yourself..." tags="" position="850,650" size="100,100">(if:visits is 1)[(set: $CurseCount to 1)You can sense a curse being placed upon you, the exact nature of which has yet to be revealed. Yet you know you must try again. Once again. [[You take note of what each voice tells you...]]]
+
+(if:visits is 2)[(set: $CurseCount to 2)You can sense yet another curse being placed upon you, or has the initial curse just been strengthened? Whatever the case, you must still try. Once again. [[You take note of what each voice tells you...]]]
+
+(if:visits is 3)[(set: $CurseCount to 3)You can sense yet another curse being placed upon you, or has the initial curse just been strengthened? Whatever the case, you must still try. Once again. [[You take note of what each voice tells you...]]]
+
+(if:visits is 4)[(set: $CurseCount to 4)By now, you must’ve narrowed it down to two. This must be a harmless curse (hopefully). Surely you have it this time?? Once again. [[You take note of what each voice tells you...]]]
+
+(if:visits is 5)[(set: $CurseCount to 5)Process by elimination is a sound strategy, despite the unknown curse. There’s no way you can get it wrong now, right? Right?? Once again. [[You take note of what each voice tells you...]]]
+
+(if:visits is 6)[(set: $CurseCount to 6)...Have you forgotten? Surely, Beau’s dream has made you go insane. Your own mind is narrating to itself after all. IT’S 2 – 1 – 3. THE COMBINATION IS 2 – 1 – 3. Once again. [[You take note of what each voice tells you...]]]
+
+(if:visits is 7)[(set: $CurseCount to 7)OHOHOOOO. THE AUDACITY. OK YOU KNOW WHAT. I’M TAKING THE WHEEL. Some very fundamental part of your brain is overridden, not by the magic of the ring, but by some pure spite for yourself. [[Your fingers snap the dial in the correct combination.]]]</tw-passagedata><tw-passagedata pid="12" name="Yes, Fin is with me in the room" tags="" position="525,300" size="100,100">(set: $Fin to TRUE)
+
+Noted! Also feel free to let me know if you have any questions. Do NOT under any circumstances refresh this page. Or your character might perma-die. Jkjk, but seriously.
+
+[[Click here to continue]]</tw-passagedata><tw-passagedata pid="13" name="You examine the ring further" tags="" position="1175,200" size="100,100">On the ring’s shoulder, you notice three symbols in a line: a bowl, a crown, and a book.
 
 You then look to the dial and start turning. As you do, the centerpiece passes by a skull symbol with the number 1 engraved, making an audible click. The click betrays its subtlety by deafening you, and then a voice speaks inside your head, as if pre-recorded. You listen to the voice and recognize it’s powered by the ring’s enchantment. 
 
-[[You take note of what each voice tells you...]]</tw-passagedata><tw-passagedata pid="8" name="You punch Beau, like really hard this time." tags="" position="925,300" size="100,100">DM NOTE: IF YOU&#39;VE REACHED THIS SCREEN. YOU MUST LET THE DM KNOW BEFORE YOU PROCEED. IF YOU DON&#39;T, THE DM WILL KNOW! TRUST ME, I CODED THIS TO KNOW.
+[[You take note of what each voice tells you...]]</tw-passagedata><tw-passagedata pid="14" name="You jump into the puddle" tags="" position="1100,575" size="100,100">NOTE: SCREENSHOT THIS PAGE AND SHOW OR SEND TO YOUR DM.
+
+You are about to return to Beau&#39;s dream to aid your party in combat. Unlocking the ring&#39;s power to create you a portal, you&#39;ve become empowered for the duration of this encounter.
+
+Each turn on your first attack, you incur 2d6 bludgeoning damage (in addition to whatever damage type the attack inflicts). 
+
+Your attacks also ignore the effects of sturdiness.
+
+For whoever is wearing the ring: as a bonus action, you may hand the ring to someone else to wear in case they wish – or perhaps need to retreat to safety via the portal you&#39;ve opened and receive its blessing. They will need to solve this puzzle to return to Beau’s dream as you have.
+
+(if: $CurseCount is 1)[Lastly, the curse inflicted on you takes effect. You are silenced for 6 seconds (1 turn).](if: $CurseCount is 2)[Lastly, the curse inflicted on you takes effect. You are silenced for 12 seconds (2 turns).](if: $CurseCount is 3)[Lastly, the curse inflicted on you takes effect. You are silenced for 18 seconds (3 turns).](if: $CurseCount is 4)[Lastly, the curse inflicted on you takes effect. You are silenced for 24 seconds (4 turns).](if: $CurseCount is 5)[Lastly, the curse inflicted on you takes effect. You are silenced for 30 seconds (5 turns).](if: $CurseCount is 6)[Lastly, the curse inflicted on you takes effect. You are silenced for 36 seconds (6 turns).](if: $CurseCount is 7)[Lastly, the curse inflicted on you takes effect. You are silenced for 42 seconds (7 turns).]
+(if: $Quake is TRUE)[Oh. Also, don&#39;t forget you punched Beau. Like really hard.]</tw-passagedata><tw-passagedata pid="15" name="You punch Beau" tags="" position="775,225" size="100,100">Despite Beau breathing deeply in his sleep. Your punch is met with resistance. His muscles are tensed as if he were awake and prepared to take a hit. Beau, however, does not stir.
+
+* Again. [[You punch Beau, like really hard this time.]]
+* You turn your attention away from Beau for the moment. [[You examine the ring further]].</tw-passagedata><tw-passagedata pid="16" name="You punch Beau, like really hard this time." tags="" position="900,300" size="100,100">DM NOTE: IF YOU&#39;VE REACHED THIS SCREEN. YOU MUST LET THE DM KNOW BEFORE YOU PROCEED. IF YOU DON&#39;T, THE DM WILL KNOW! TRUST ME, I CODED THIS TO KNOW.
 
 
 
-[[Click this only once you&#39;ve told the DM.]]</tw-passagedata><tw-passagedata pid="9" name="Click this only once you&#39;ve told the DM." tags="" position="1050,300" size="100,100">Beau does not react yet again. Unsure of what&#39;s happening to Beau, you reckon you must turn your attention away from him for the moment and back to the ring.
-(set: $Quake to TRUE)
-[[You examine the ring further]]</tw-passagedata><tw-passagedata pid="10" name="You take note of what each voice tells you..." tags="" position="550,500" size="100,100">
-
-Skull 1: “Before you I lie, upon your finger – when I speak, I raise my wrist. I ask politely rather than insist.”
+[[Click this only once you&#39;ve told the DM.]]</tw-passagedata><tw-passagedata pid="17" name="You take note of what each voice tells you..." tags="" position="550,500" size="100,100">Skull 1: “Before you I lie, upon your finger – when I speak, I raise my wrist. I ask politely rather than insist.”
 
 Skull 2: “Before you I lie, upon your finger – thoughts in my brain; they storm. As I watch these fools perform.”
 
@@ -73,39 +89,12 @@ A beggar. A king. A sage. What order of skulls match the beggar, king, and sage?
 
 * [[3, 1, 2]]
 
-* [[3, 2, 1]]</tw-passagedata><tw-passagedata pid="11" name="1, 2, 3" tags="" position="525,650" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="12" name="1, 3, 2" tags="" position="650,650" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="13" name="2, 1, 3" tags="" position="400,650" size="100,100">The ring makes a definitive click. No voice this time, but black liquid starts leaking onto the floor before you. It makes no stain, but the danger you sensed at first is more obvious. Your friends are locked in combat. 
+* [[3, 2, 1]]</tw-passagedata><tw-passagedata pid="18" name="You try to shake Beau awake" tags="" position="775,350" size="100,100">Despite Beau breathing deeply in his sleep. You are met with resistance. His muscles are tensed as if he were paralyzed. Beau, however, does not stir.
 
-[[You jump into the puddle, sensing that the portal of black liquid closes in behind you and seeps back into your ring]]</tw-passagedata><tw-passagedata pid="14" name="2, 3, 1" tags="" position="525,775" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="15" name="3, 1, 2" tags="" position="650,775" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="16" name="3, 2, 1" tags="" position="400,775" size="100,100">[[Nothing happens with the ring. You wonder to yourself...]]</tw-passagedata><tw-passagedata pid="17" name="Nothing happens with the ring. You wonder to yourself..." tags="" position="850,650" size="100,100">(if:visits is 1)[(set: $CurseCount to 1)You can sense a curse being placed upon you, the exact nature of which has yet to be revealed. Yet you know you must try again. Once again. [[You take note of what each voice tells you...]]]
+* [[You punch Beau, like really hard this time.]]
+* You turn your attention away from Beau for the moment. [[You examine the ring further]].</tw-passagedata><tw-passagedata pid="19" name="Your fingers snap the dial in the correct combination." tags="" position="850,775" size="100,100">The ring makes a definitive click. No voice this time, but black liquid starts leaking onto the floor before you. It makes no stain, but the danger you sensed at first is more obvious. Your friends are locked in combat. 
 
-(if:visits is 2)[(set: $CurseCount to 2)You can sense yet another curse being placed upon you, or has the initial curse just been strengthened? Whatever the case, you must still try. Once again. [[You take note of what each voice tells you...]]]
-
-(if:visits is 3)[(set: $CurseCount to 3)You can sense yet another curse being placed upon you, or has the initial curse just been strengthened? Whatever the case, you must still try. Once again. [[You take note of what each voice tells you...]]]
-
-(if:visits is 4)[(set: $CurseCount to 4)By now, you must’ve narrowed it down to two. This must be a harmless curse (hopefully). Surely you have it this time?? Once again. [[You take note of what each voice tells you...]]]
-
-(if:visits is 5)[(set: $CurseCount to 5)Process by elimination is a sound strategy, despite the unknown curse. There’s no way you can get it wrong now, right? Right?? Once again. [[You take note of what each voice tells you...]]]
-
-(if:visits is 6)[(set: $CurseCount to 6)...Have you forgotten? Surely, Beau’s dream has made you go insane. Your own mind is narrating to itself after all. IT’S 2 – 1 – 3. THE COMBINATION IS 2 – 1 – 3. Once again. [[You take note of what each voice tells you...]]]
-
-(if:visits is 7)[(set: $CurseCount to 7)OHOHOOOO. THE AUDACITY. OK YOU KNOW WHAT. I’M TAKING THE WHEEL. Some very fundamental part of your brain is overridden, not by the magic of the ring, but by some pure spite for yourself. [[Your fingers snap the dial in the correct combination.]]]
-
-
-
-
-</tw-passagedata><tw-passagedata pid="18" name="You jump into the puddle, sensing that the portal of black liquid closes in behind you and seeps back into your ring" tags="" position="1100,575" size="100,100">NOTE: SCREENSHOT THIS PAGE AND SHOW OR SEND TO YOUR DM.
-
-You are about to return to Beau&#39;s dream to aid your party in combat. Unlocking the ring&#39;s power to create you a portal, you&#39;ve become empowered for this encounter.
-
-All your attacks, physical or magical, incur 3d6 bludgeoning damage (in addition to the damage type they currently inflict). 
-
-Your attacks also ignore the effects of sturdiness.
-
-As a bonus action, you may hand the ring to someone else to wear in case they wish – or perhaps need – to teleport to the corporeal plane. They will need to solve this puzzle to return to Beau’s dream as you have.
-
-(if: $CurseCount is 1)[Lastly, the curse inflicted on you takes effect. You are silenced for 6 seconds (1 turn).](if: $CurseCount is 2)[Lastly, the curse inflicted on you takes effect. You are silenced for 12 seconds (2 turns).](if: $CurseCount is 3)[Lastly, the curse inflicted on you takes effect. You are silenced for 18 seconds (3 turns).](if: $CurseCount is 4)[Lastly, the curse inflicted on you takes effect. You are silenced for 24 seconds (4 turns).](if: $CurseCount is 5)[Lastly, the curse inflicted on you takes effect. You are silenced for 30 seconds (5 turns).](if: $CurseCount is 6)[Lastly, the curse inflicted on you takes effect. You are silenced for 36 seconds (6 turns).](if: $CurseCount is 7)[Lastly, the curse inflicted on you takes effect. You are silenced for 42 seconds (7 turns).]
-(if: $Quake is TRUE)[Oh. Also, don&#39;t forget you punched Beau. Like really hard.]</tw-passagedata><tw-passagedata pid="19" name="Your fingers snap the dial in the correct combination." tags="" position="850,775" size="100,100">The ring makes a definitive click. No voice this time, but black liquid starts leaking onto the floor before you. It makes no stain, but the danger you sensed at first is more obvious. Your friends are locked in combat. 
-
-[[You jump into the puddle, sensing that the portal of black liquid closes in behind you and seeps back into your ring]]</tw-passagedata></tw-storydata>
+[[You jump into the puddle]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
